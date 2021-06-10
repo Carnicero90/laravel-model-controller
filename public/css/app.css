@@ -8,6 +8,10 @@ li {
   list-style-type: none;
 }
 
+body {
+  font-family: "Nunito";
+}
+
 .flexer {
   display: flex;
 }
@@ -20,28 +24,6 @@ li {
   justify-content: space-between;
 }
 
-.movie {
-  padding: 15px;
-  background-color: lightblue;
-  margin-right: 30px;
-  width: 200px;
-}
-
-thead,
-tfoot {
-  background-color: #3f87a6;
-  color: #fff;
-}
-
-tbody {
-  background-color: #e4f0f5;
-}
-
-caption {
-  padding: 10px;
-  caption-side: bottom;
-}
-
 table {
   border-collapse: collapse;
   border: 2px solid #c8c8c8;
@@ -50,13 +32,22 @@ table {
   font-size: 0.8rem;
 }
 
-td,
-th {
+table thead {
+  background-color: #3f87a6;
+  color: #fff;
+}
+
+table td {
+  text-align: center;
+}
+
+table td,
+table th {
   border: 1px solid #bebebe;
   padding: 5px 10px;
 }
 
-td {
-  text-align: center;
+table tbody {
+  background-color: #e4f0f5;
 }
 
