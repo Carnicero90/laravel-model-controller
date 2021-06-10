@@ -7,4 +7,16 @@
  li {
      list-style-type: none;
  }
- 
+
+
+ .flexer {
+     display: flex;
+
+     &.wrap {
+         flex-wrap: wrap;
+     }
+
+     &.between {
+         justify-content: space-between;
+     }
+ }
