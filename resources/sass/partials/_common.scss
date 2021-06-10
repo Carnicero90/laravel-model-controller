@@ -11,9 +11,17 @@
 body {
     font-family: 'Nunito';
     background: lightseagreen;
+    min-height: 100vh;
 }
- .flexer {
+.wrapper {
+    min-height: 100vh;
+}
+
+.flexer {
      display: flex;
+     &.col {
+         flex-direction: column;
+     }
 
      &.wrap {
          flex-wrap: wrap;
@@ -21,5 +29,12 @@ body {
 
      &.between {
          justify-content: space-between;
+     }
+
+     &>.grower {
+         flex-grow: 1;
+     }
+     &>.noshrink {
+        flex-shrink: 0;
      }
  }

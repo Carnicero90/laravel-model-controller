@@ -11,10 +11,19 @@ li {
 body {
   font-family: "Nunito";
   background: lightseagreen;
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100vh;
 }
 
 .flexer {
   display: flex;
+}
+
+.flexer.col {
+  flex-direction: column;
 }
 
 .flexer.wrap {
@@ -23,6 +32,14 @@ body {
 
 .flexer.between {
   justify-content: space-between;
+}
+
+.flexer > .grower {
+  flex-grow: 1;
+}
+
+.flexer > .noshrink {
+  flex-shrink: 0;
 }
 
 .covid_banner {
@@ -35,6 +52,11 @@ body {
   text-align: center;
   box-shadow: 0 0 0 5px white, 0 0 0 6px lightgrey;
   position: fixed;
+}
+
+header {
+  padding: 15px;
+  background-color: #4e6aa5;
 }
 
 table {
@@ -62,5 +84,10 @@ table th {
 
 table tbody {
   background-color: #e4f0f5;
+}
+
+footer {
+  padding: 15px;
+  background-color: #4e6aa5;
 }
 

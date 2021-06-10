@@ -12,15 +12,17 @@
 
     {{-- local stylesheet --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Document</title>
+    <title>Bozza</title>
 </head>
 
 <body>
-    @include('partials.header')
-    <main> 
-        @yield('main_content')
-    </main>
-    @include('partials.footer')
+    <div class="wrapper flexer col">
+        @include('partials.header')
+        <main class="grower">
+            @yield('main_content')
+        </main>
+        @include('partials.footer')
+    </div>
 </body>
 
 </html>
