@@ -1,5 +1,9 @@
 @extends('layouts.app')
 @section('main_content')
+@include('components.covid', [
+    'top' => '10px',
+    'left' => '50%'
+])
 <h2>Programmazione serale</h2>
 <table>
     <thead>
